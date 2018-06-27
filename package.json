@@ -1,0 +1,11 @@
+{
+  "name": "cucumber-checker",
+  "version": "1.0.0",
+  "description": "Check if your cucumber's syntax is valid due to your step definitions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamil Pyszczek",
+  "license": "MIT"
+}
