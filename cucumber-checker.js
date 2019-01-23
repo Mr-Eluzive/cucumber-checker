@@ -5,8 +5,11 @@ let cucumberLineNumber = 1;
 
 const prepareLineToCheck = (line, number) => {
     const prefix = line.split(' ').filter(x => x !== '').shift();
-    let preparedLine = line.replace(prefix, '').replace(/".*"/gm, '"([^"]*)"').replace(/<.*>/gm, '([^"]*)').trim();
-    preparedLines.push({line: preparedLine, number});
+
+    if (prefix !== '#') {
+        const preparedLine = line.replace(prefix, '').replace(/".*"/gm, '"([^"]*)"').replace(/<.*>/gm, '<([^"]*)>').trim();
+        preparedLines.push({line: preparedLine, number});
+    }
 };
 
 const cucumberScriptChecker = line => {
