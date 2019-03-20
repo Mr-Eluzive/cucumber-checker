@@ -3,7 +3,7 @@ This tool can help you ensure that every step has written in Cucumber does have 
 
 ## run
 ```shell
-.\run.cmd <path_to_feature_file>
+.\run.cmd <path_to_feature_file_in_feature_directory> <path-to-project>
 ```
 
 ## example
@@ -22,6 +22,6 @@ This tool can help you ensure that every step has written in Cucumber does have 
 ```
 
 ```shell
-.\run.cmd sample.feature
-.\run.cmd forms/forms.feature
+.\run.cmd sample.feature ../project
+.\run.cmd forms/forms.feature ../project
 ```
